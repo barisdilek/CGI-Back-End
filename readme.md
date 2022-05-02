@@ -22,7 +22,7 @@ As in the webSocketClient.html file included in the project, real-time data flow
 Swagger
 ---------------------------------------------------------------------
 
-Swagger UI Link : <http://localhost:8888/swagger>
+Swagger UI Link : <http://localhost:7777/swagger>
 
 You can seeing all endpoints in Swagger UI Link
 
