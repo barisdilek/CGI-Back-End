@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+<body>
+    <h1></h1>
+    <table>
+        <tr>
+            <td>Base Url</td>
+            <td><input type="text" id="baseUrl" placeholder="BaseUrl örn : localhost:7777?name=tenant1" placeholder="localhost:7777?name=tenant1"  value="localhost:7777?name=tenant1"/></td>
+            <td>
+                <button id="sendButton">Send</button>
+            </td>
+        </tr>
+        <!--
+        <tr>
+            <td>Unique Id</td>
+            <td><input type=text id="uniqueId" placeholder="Gönder butonuna tıklayınız." /></td>
+        </tr>
+        -->
+    </table>
+	
+	
+	<ul id="messages"></ul>
+    	<script language="javascript" type="text/javascript">
+        function connect(uri) {
+            socket = new WebSocket(uri);
+            socket.onopen = function(event) {
+                console.log("opened connection to " + uri);
+            };
+            socket.onclose = function(event) {
+                console.log("closed connection from " + uri);
+            };
+            socket.onmessage = function(event) {
+                appendItem(list, event.data);
+                console.log(event.data);
+            };
+            socket.onerror = function(event) {
+                console.log("error: " + event.data);
+            };
+        }
+
+        
+
+        var list = document.getElementById("messages");
+        var button = document.getElementById("sendButton"); 
+
+        button.addEventListener("click", function() {
+            //var uniqueId = document.getElementById("uniqueId");
+            var baseUrl = document.getElementById("baseUrl");
+            //var uuid = guid();
+            var uri = "ws://" + baseUrl.value //+ "/ws?UniqueId=" + uuid;
+			connect(uri);
+            //sendMessage(input.value);
+            //uniqueId.value = uuid;
+        });
+
+        function sendMessage(message) { 
+            console.log("Sending: " + message);
+            socket.send(message);
+        }
+
+        function appendItem(list, message) {
+            var item = document.createElement("li");
+            item.appendChild(document.createTextNode(message));
+            list.appendChild(item);
+        }
+
+		function guid() {
+			function s4() {
+			return Math.floor((1 + Math.random()) * 0x10000)
+					.toString(16)
+					.substring(1);
+		}
+
+		return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+
+}		
+
+    </script>
+
+</body>
+
+</html>

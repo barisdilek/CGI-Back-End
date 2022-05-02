@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "80b159f3-a3c7-4fd7-9fcd-52154a3061e0",
+		"name": "vehicleApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mqtt",
+			"item": [
+				{
+					"name": "Start",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/mqtt",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"mqtt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"topic\": \"vehicles/car5\",\r\n  \"message\": \"Sample message\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/mqtt",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"mqtt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscribe",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"topic\": \"vehicles/+\",\r\n  \"message\": \"Sample message\",\r\n  \"qos\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/mqtt",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"mqtt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/mqtt",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"mqtt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vehicle",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/vehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/vehicle/car1",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"vehicle",
+								"car1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"car5\",\r\n    \"infos\": {\r\n        \"manufacturer\": \"Mercedes Benz\",\r\n        \"type\": \"SUV\",\r\n        \"modell\": \"204 X (GLC 220 D 4MATIC)\",\r\n        \"engine_performance_kw\": 125,\r\n        \"engine_performance_ps\": 170,\r\n        \"fuel\": \"Diesel\",\r\n        \"seats\": 5,\r\n        \"emission_class\": \"Euro6d-TEMP\",\r\n        \"registration\": \"09/2017\",\r\n        \"construction_year\": 2017,\r\n        \"vin\": \"WDC2539461F017162\",\r\n        \"hsn\": \"1313\",\r\n        \"tsn\": \"EWR\",\r\n        \"license_plate\": \"C-GI 1111\"\r\n    },\r\n    \"lastCoordinate\": {\r\n        \"latitude\": \"52.44169397\",\r\n        \"longitude\": \"13.68698177\",\r\n        \"accuracy_m\": \"3\",\r\n        \"altitude_m\": \"74.185\",\r\n        \"speed_m_per_s\": \"12.09\",\r\n        \"bearing_deg\": \"138\",\r\n        \"sat_used\": \"9\",\r\n        \"sat_inview\": \"29\",\r\n        \"fuel_percent\": \"5.71\",\r\n        \"lights\": \"on\",\r\n        \"engine\": \"started\"\r\n    },\r\n    \"lastAddress\": {\r\n        \"city\":\"Schinefeld\",\r\n        \"zip\":\"12529\",\r\n        \"street\":\"Anna-Seghers-strand\",\r\n        \"houseNumber\":\"6\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/vehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"car5\",\r\n    \"infos\": {\r\n        \"manufacturer\": \"Mercedes Benz\",\r\n        \"type\": \"SUV\",\r\n        \"modell\": \"204 X (GLC 220 D 4MATIC)\",\r\n        \"engine_performance_kw\": 125,\r\n        \"engine_performance_ps\": 170,\r\n        \"fuel\": \"Diesel\",\r\n        \"seats\": 5,\r\n        \"emission_class\": \"Euro6d-TEMP\",\r\n        \"registration\": \"09/2017\",\r\n        \"construction_year\": 2017,\r\n        \"vin\": \"WDC2539461F017162\",\r\n        \"hsn\": \"1313\",\r\n        \"tsn\": \"EWR\",\r\n        \"license_plate\": \"C-GI 1111\"\r\n    },\r\n    \"lastCoordinate\": {\r\n        \"latitude\": \"52.44169397\",\r\n        \"longitude\": \"13.68698177\",\r\n        \"accuracy_m\": \"3\",\r\n        \"altitude_m\": \"74.185\",\r\n        \"speed_m_per_s\": \"12.09\",\r\n        \"bearing_deg\": \"138\",\r\n        \"sat_used\": \"9\",\r\n        \"sat_inview\": \"29\",\r\n        \"fuel_percent\": \"5.71\",\r\n        \"lights\": \"on\",\r\n        \"engine\": \"started\"\r\n    },\r\n    \"lastAddress\": {\r\n        \"city\":\"Schinefeld\",\r\n        \"zip\":\"12529\",\r\n        \"street\":\"Anna-Seghers-strand\",\r\n        \"houseNumber\":\"20\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/vehicle",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/vehicle/car5",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"vehicle",
+								"car5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tenant",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/tenant",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"tenant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7777/tenant/tenant1",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"tenant",
+								"tenant1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"tenant2\",\r\n    \"topic\": [\r\n        \"vehicles/car1\", \r\n        \"vehicles/car1/tele\", \r\n        \"vehicles/car2\", \r\n        \"vehicles/car2/tele\", \r\n        \"vehicles/car3\",\r\n        \"vehicles/car3/tele\", \r\n        \"vehicles/car4\", \r\n        \"vehicles/car4/tele\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/tenant",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"tenant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"tenant2\",\r\n    \"topic\": [\r\n        \"vehicles/car1\", \r\n        \"vehicles/car1/tele\", \r\n        \"vehicles/car2\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/tenant",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"tenant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7777/tenant/tenant2",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"tenant",
+								"tenant2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

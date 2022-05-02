@@ -1,0 +1,32 @@
+{
+    "entities": [
+        {
+            "name": "tenant1",
+            "topics": [
+                "vehicles/car1",
+                "vehicles/car4",
+                "vehicles/car2",
+                "vehicles/car3",
+                "vehicles/car4/tele",
+                "vehicles/car2/tele",
+                "vehicles/car1/tele",
+                "vehicles/car3/tele",
+                "vehicles"
+            ]
+        },
+        {
+            "name": "tenant2",
+            "topics": [
+                "vehicles/car1",
+                "vehicles/car1/tele",
+                "vehicles/car2",
+                "vehicles/car2/tele",
+                "vehicles/car3",
+                "vehicles/car3/tele",
+                "vehicles/car4",
+                "vehicles/car4/tele",
+                "vehicles"
+            ]
+        }
+    ]
+}

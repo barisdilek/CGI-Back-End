@@ -1,0 +1,43 @@
+{
+    "entities":[
+        {
+            "name": "car1",
+            "infos": {
+                "manufacturer": "Mercedes Benz",
+                "type": "SUV",
+                "modell": "204 X (GLC 220 D 4MATIC)",
+                "engine_performance_kw": 125,
+                "engine_performance_ps": 170,
+                "fuel": "Diesel",
+                "seats": 5,
+                "emission_class": "Euro6d-TEMP",
+                "registration": "09/2017",
+                "construction_year": 2017,
+                "vin": "WDC2539461F017162",
+                "hsn": "1313",
+                "tsn": "EWR",
+                "license_plate": "C-GI 1111"
+            },
+            "lastCoordinate": {
+                "latitude": "52.44169397",
+                "longitude": "13.68698177",
+                "accuracy_m": "3",
+                "altitude_m": "74.185",
+                "speed_m_per_s": "12.09",
+                "bearing_deg": "138",
+                "sat_used": "9",
+                "sat_inview": "29",
+                "fuel_percent": "5.71",
+                "lights": "on",
+                "engine": "started"
+            },
+            "lastAddress": {
+                "address":"Fürstenwalder Allee 21-23",
+                "postcode":"12589",
+                "locality":"Rahnsdorf",
+                "region":"Berlin",
+                "country":"Germany"
+            }
+        }
+    ]
+}

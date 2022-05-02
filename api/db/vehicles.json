@@ -1,0 +1,152 @@
+{
+    "entities": [
+        {
+            "name": "car1",
+            "infos": {
+                "manufacturer": "Mercedes Benz",
+                "type": "SUV",
+                "modell": "204 X (GLC 220 D 4MATIC)",
+                "engine_performance_kw": 125,
+                "engine_performance_ps": 170,
+                "fuel": "Diesel",
+                "seats": 5,
+                "emission_class": "Euro6d-TEMP",
+                "registration": "09/2017",
+                "construction_year": 2017,
+                "vin": "WDC2539461F017162",
+                "hsn": "1313",
+                "tsn": "EWR",
+                "license_plate": "C-GI 1111"
+            },
+            "lastCoordinate": {
+                "latitude": "52.5099643",
+                "longitude": "13.38302232",
+                "accuracy_m": "10",
+                "altitude_m": "75.67",
+                "speed_m_per_s": "8.15",
+                "bearing_deg": "83",
+                "sat_used": "13",
+                "sat_inview": "28",
+                "fuel_percent": "45.24"
+            },
+            "lastAddress": {
+                "postcode": "10117",
+                "locality": "Mitte",
+                "region": "Berlin",
+                "country": "Germany"
+            }
+        },
+        {
+            "name": "car4",
+            "infos": {
+                "manufacturer": "Porsche",
+                "type": "Kombi",
+                "modell": "971 (PANAMERA ST 4 E-HYBRID 2.9)",
+                "engine_performance_kw": 243,
+                "engine_performance_ps": 330,
+                "electro_performance_kw": 100,
+                "electro_performance_ps": 136,
+                "fuel": "Benzin/Elektro",
+                "seats": 5,
+                "emission_class": "Euro6d-TEMP",
+                "registration": "12/2019",
+                "construction_year": 2019,
+                "vin": "WP1ZZZ92ZGLA66102",
+                "hsn": "0583",
+                "tsn": "AKG",
+                "license_plate": "C-GI 4444"
+            },
+            "lastCoordinate": {
+                "latitude": "52.44123243",
+                "longitude": "13.69522051",
+                "accuracy_m": "5",
+                "altitude_m": "77.729",
+                "speed_m_per_s": "10.96",
+                "bearing_deg": "88",
+                "sat_used": "12",
+                "sat_inview": "29",
+                "fuel_percent": "5.53",
+                "lights": "on",
+                "engine": "started"
+            },
+            "lastAddress": {
+                "street": "Püttbergeweg",
+                "houseNumber": "42",
+                "postcode": "12589",
+                "locality": "Rahnsdorf",
+                "region": "Berlin",
+                "country": "Germany"
+            }
+        },
+        {
+            "name": "car2",
+            "infos": {
+                "manufacturer": "VW",
+                "type": "Van",
+                "modell": "1T (TOURAN 1.4 TSI)",
+                "engine_performance_kw": 103,
+                "engine_performance_ps": 140,
+                "fuel": "Benzin",
+                "seats": 7,
+                "emission_class": "Euro6",
+                "registration": "02/2016",
+                "construction_year": 2015,
+                "vin": "WVGZZZ1TZ6W029010",
+                "hsn": "0603",
+                "tsn": "AIG",
+                "license_plate": "C-GI 2222"
+            },
+            "lastCoordinate": {
+                "latitude": "52.4874381",
+                "longitude": "13.45604099",
+                "accuracy_m": "11",
+                "altitude_m": "76.651",
+                "speed_m_per_s": "4.77",
+                "bearing_deg": "139",
+                "sat_used": "11",
+                "sat_inview": "27",
+                "fuel_percent": "15.28",
+                "lights": "off",
+                "engine": "started"
+            },
+            "lastAddress": {
+                "street": "Kiefholzstraße",
+                "houseNumber": "404",
+                "postcode": "12435",
+                "locality": "Alt-Treptow",
+                "region": "Berlin",
+                "country": "Germany"
+            }
+        },
+        {
+            "name": "car3",
+            "infos": {
+                "manufacturer": "Tesla",
+                "type": "Limousine",
+                "modell": "Model 3 Long Range",
+                "performance_kw": 350,
+                "performance_ps": 476,
+                "fuel": "Elektro",
+                "seats": 5,
+                "emission_class": "Euro6d-TEMP",
+                "registration": "02/2019",
+                "construction_year": 2018,
+                "vin": "5YJ3E7EB1KF207DER",
+                "hsn": "1480",
+                "tsn": "AAR",
+                "license_plate": "C-GI 3333"
+            },
+            "lastCoordinate": {
+                "latitude;longitude;accuracy_m;altitude_m;speed_m_per_s;bearing_deg;sat_used;sat_inview;battery_percent;lights;engine": "52",
+                "null": [
+                    "30799598;13",
+                    "27392459;10;92",
+                    "977;39",
+                    "85;249;19;28;23",
+                    "6;on;startet"
+                ]
+            },
+            "lastAddress": {}
+        }
+    ]
+}

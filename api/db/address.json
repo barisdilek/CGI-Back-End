@@ -1,0 +1,216 @@
+{
+    "type": "FeatureCollection",
+    "query": [
+        13.68698177,
+        52.44169397
+    ],
+    "features": [
+        {
+            "id": "address.3856653247553034",
+            "type": "Feature",
+            "place_type": [
+                "address"
+            ],
+            "relevance": 1,
+            "properties": {
+                "accuracy": "point"
+            },
+            "text": "Fürstenwalder Allee",
+            "place_name": "Fürstenwalder Allee 21-23, 12589 Berlin, Germany",
+            "center": [
+                13.6869865,
+                52.4416554
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.6869865,
+                    52.4416554
+                ]
+            },
+            "address": "21-23",
+            "context": [
+                {
+                    "id": "postcode.12680663711446500",
+                    "text": "12589"
+                },
+                {
+                    "id": "locality.12680663711179610",
+                    "text": "Rahnsdorf"
+                },
+                {
+                    "id": "place.14094307404564380",
+                    "short_code": "DE-BE",
+                    "wikidata": "Q64",
+                    "text": "Berlin"
+                },
+                {
+                    "id": "country.10814856728480410",
+                    "wikidata": "Q183",
+                    "short_code": "de",
+                    "text": "Germany"
+                }
+            ]
+        },
+        {
+            "id": "postcode.12680663711446500",
+            "type": "Feature",
+            "place_type": [
+                "postcode"
+            ],
+            "relevance": 1,
+            "properties": {},
+            "text": "12589",
+            "place_name": "12589, Berlin, Germany",
+            "bbox": [
+                13.65675,
+                52.416383,
+                13.761131,
+                52.47329
+            ],
+            "center": [
+                13.704848,
+                52.433997
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.704848,
+                    52.433997
+                ]
+            },
+            "context": [
+                {
+                    "id": "locality.12680663711179610",
+                    "text": "Rahnsdorf"
+                },
+                {
+                    "id": "place.14094307404564380",
+                    "short_code": "DE-BE",
+                    "wikidata": "Q64",
+                    "text": "Berlin"
+                },
+                {
+                    "id": "country.10814856728480410",
+                    "wikidata": "Q183",
+                    "short_code": "de",
+                    "text": "Germany"
+                }
+            ]
+        },
+        {
+            "id": "locality.12680663711179610",
+            "type": "Feature",
+            "place_type": [
+                "locality"
+            ],
+            "relevance": 1,
+            "properties": {},
+            "text": "Rahnsdorf",
+            "place_name": "Rahnsdorf, Berlin, Germany",
+            "bbox": [
+                13.65675,
+                52.416383,
+                13.761131,
+                52.47329
+            ],
+            "center": [
+                13.701802,
+                52.435873
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.701802,
+                    52.435873
+                ]
+            },
+            "context": [
+                {
+                    "id": "place.14094307404564380",
+                    "short_code": "DE-BE",
+                    "wikidata": "Q64",
+                    "text": "Berlin"
+                },
+                {
+                    "id": "country.10814856728480410",
+                    "wikidata": "Q183",
+                    "short_code": "de",
+                    "text": "Germany"
+                }
+            ]
+        },
+        {
+            "id": "place.14094307404564380",
+            "type": "Feature",
+            "place_type": [
+                "region",
+                "place"
+            ],
+            "relevance": 1,
+            "properties": {
+                "short_code": "DE-BE",
+                "wikidata": "Q64"
+            },
+            "text": "Berlin",
+            "place_name": "Berlin, Germany",
+            "bbox": [
+                13.0883590415111,
+                52.3382670008426,
+                13.761131997363,
+                52.6755029827484
+            ],
+            "center": [
+                13.38333,
+                52.51667
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.38333,
+                    52.51667
+                ]
+            },
+            "context": [
+                {
+                    "id": "country.10814856728480410",
+                    "wikidata": "Q183",
+                    "short_code": "de",
+                    "text": "Germany"
+                }
+            ]
+        },
+        {
+            "id": "country.10814856728480410",
+            "type": "Feature",
+            "place_type": [
+                "country"
+            ],
+            "relevance": 1,
+            "properties": {
+                "wikidata": "Q183",
+                "short_code": "de"
+            },
+            "text": "Germany",
+            "place_name": "Germany",
+            "bbox": [
+                5.866315,
+                47.270238,
+                15.041832,
+                55.1286491
+            ],
+            "center": [
+                10.0183432948567,
+                51.1334813439932
+            ],
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.0183432948567,
+                    51.1334813439932
+                ]
+            }
+        }
+    ],
+    "attribution": "NOTICE: © 2022 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}

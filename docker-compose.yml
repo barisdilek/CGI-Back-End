@@ -1,0 +1,10 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: node server.js
+    volumes:
+      - .:/api/
+      - /node_modules
+    ports:
+      - "7777:7777"
